@@ -1,0 +1,231 @@
+
+{
+  "intro": {
+    "description": "Yuki Tanaka and Talia Scott are in conflict over how to handle a recently flagged AI platform showing signs of demographic bias. Yuki believes retraining is the ethical and scalable path forward. Priya is concerned about downstream risks and favors rejecting the tool entirely.",
+    "main_user": "Talia",
+    "main_speaker": "Yuki",
+    "user_emotion": "confidence",
+    "speaker_emotion": "determined",
+    "next": "decision_1"
+  },
+  "decision_1": {
+    "description": "Yuki wants your input before she presents her retraining plan to the executive team. She’s confident the model can be improved, but knows leadership will want concrete evidence.",
+    "speaker": "Yuki",
+    "speaker_emotion": "determined",
+    "options": [
+      {
+        "option": "Advise her to emphasize how balanced training data can significantly reduce demographic bias, using ECG’s supplier diversity model as precedent.",
+        "feedback": "That’s a strong point. Referencing a past success aligns well with ECG’s values and gives credibility to retraining as a viable strategy.",
+        "speaker_emotion": "confidence",
+        "user_emotion": "confidence",
+        "variable_changes": {
+          "bias_reduction_effectiveness": 1,
+          "model_performance_impact": 0,
+          "ethical_oversight_transparency": 1,
+          "rationale": "You support fairness and transparency by referencing diverse data and prior ethical success, though you haven’t yet addressed performance implications."
+        }
+      },
+      {
+        "option": "Suggest she focus on technical methods like adversarial debiasing and fairness constraints during training to boost credibility.",
+        "feedback": "That's helpful for technical validation, but it may not resonate with business stakeholders who need practical examples, not just algorithms.",
+        "speaker_emotion": "curiosity",
+        "user_emotion": "uncertainty",
+        "variable_changes": {
+          "bias_reduction_effectiveness": 1,
+          "model_performance_impact": 0,
+          "ethical_oversight_transparency": 0,
+          "rationale": "You support fairness technically, but missed the ethical framing or business relevance that would promote transparency or stakeholder trust."
+        }
+      },
+      {
+        "option": "Recommend she stress that retraining could improve brand trust, even if model performance drops slightly.",
+        "feedback": "An interesting angle. But we need more than brand sentiment—leadership will push back without a clearer trade-off analysis.",
+        "speaker_emotion": "skepticism",
+        "user_emotion": "uncertainty",
+        "variable_changes": {
+          "bias_reduction_effectiveness": 0,
+          "model_performance_impact": -1,
+          "ethical_oversight_transparency": 1,
+          "rationale": "You advanced transparency goals but neglected performance consequences, weakening the overall business case."
+        }
+      },
+      {
+        "option": "Warn her that retraining is too risky without knowing the exact causes of bias, and that a safer option may be platform rejection.",
+        "feedback": "That’s a cautious stance, but Yuki will push back. She sees retraining as essential. You’ll need a stronger rationale to sway her.",
+        "speaker_emotion": "frustration",
+        "user_emotion": "stress",
+        "variable_changes": {
+          "bias_reduction_effectiveness": -1,
+          "model_performance_impact": 0,
+          "ethical_oversight_transparency": -1,
+          "rationale": "You stalled a fairness opportunity and undercut transparency by discouraging diagnostic follow-up before action."
+        }
+      }
+    ]
+  },
+  "decision_2": {
+    "description": "Talia brings up past audit failures in another product line and wants to avoid similar risks. She asks your advice on how to frame the risks of retraining during tomorrow’s compliance check-in.",
+    "speaker": "Talia",
+    "speaker_emotion": "skepticism",
+    "options": [
+      {
+        "option": "Recommend she highlight that retrained models often lack audit trails, risking future compliance setbacks.",
+        "feedback": "Fair concern, but retraining doesn't inherently eliminate auditability—especially if procedures are well documented.",
+        "speaker_emotion": "skepticism",
+        "user_emotion": "uncertainty",
+        "variable_changes": {
+          "bias_reduction_effectiveness": 0,
+          "model_performance_impact": 0,
+          "ethical_oversight_transparency": -1,
+          "rationale": "You cast doubt on retraining without proposing transparency solutions, which weakens the ethical oversight goal."
+        }
+      },
+      {
+        "option": "Advise her to propose retraining only if it includes documentation checkpoints and explainability layers.",
+        "feedback": "Good thinking. That strikes a balance between Priya’s compliance concerns and Yuki’s optimism for model improvement.",
+        "speaker_emotion": "trust",
+        "user_emotion": "confidence",
+        "variable_changes": {
+          "bias_reduction_effectiveness": 1,
+          "model_performance_impact": 0,
+          "ethical_oversight_transparency": 1,
+          "rationale": "You integrated retraining with oversight safeguards, advancing both bias mitigation and ethical accountability."
+        }
+      },
+      {
+        "option": "Suggest she emphasize that platform rejection is the only way to ensure legal defensibility.",
+        "feedback": "That’s an extreme view. We should evaluate solutions, not shut down innovation at the first sign of bias.",
+        "speaker_emotion": "frustration",
+        "user_emotion": "stress",
+        "variable_changes": {
+          "bias_reduction_effectiveness": -1,
+          "model_performance_impact": -1,
+          "ethical_oversight_transparency": 0,
+          "rationale": "You discouraged improvement and overstated legal risk, undermining both fairness and innovation potential."
+        }
+      },
+      {
+        "option": "Encourage her to propose sandbox testing on the retrained model to monitor fairness and performance before deployment.",
+        "feedback": "Excellent recommendation. A controlled environment allows us to test effectiveness and reduce risk.",
+        "speaker_emotion": "confidence",
+        "user_emotion": "confidence",
+        "variable_changes": {
+          "bias_reduction_effectiveness": 1,
+          "model_performance_impact": 1,
+          "ethical_oversight_transparency": 1,
+          "rationale": "You promoted a structured testing plan that enhances fairness, performance, and transparency simultaneously."
+        }
+      }
+    ]
+  },
+  "decision_3": {
+    "description": "Later, Yuki asks how to respond to executives questioning the performance trade-offs of bias mitigation. She wants a response that feels both ethical and pragmatic.",
+    "speaker": "Yuki",
+    "speaker_emotion": "overwhelmed",
+    "options": [
+      {
+        "option": "Suggest she emphasize that bias mitigation doesn’t always reduce performance—some fairness constraints improve generalization.",
+        "feedback": "Good point. That message will help counter assumptions that fairness always comes at a cost.",
+        "speaker_emotion": "confidence",
+        "user_emotion": "confidence",
+        "variable_changes": {
+          "bias_reduction_effectiveness": 1,
+          "model_performance_impact": 1,
+          "ethical_oversight_transparency": 0,
+          "rationale": "You clarified that fairness can support performance, but didn’t directly address explainability or auditability."
+        }
+      },
+      {
+        "option": "Recommend she acknowledge the performance trade-off and pivot to long-term reputational benefits.",
+        "feedback": "That’s valid but abstract. Business leaders need tangible metrics, not just brand values.",
+        "speaker_emotion": "uncertainty",
+        "user_emotion": "uncertainty",
+        "variable_changes": {
+          "bias_reduction_effectiveness": 0,
+          "model_performance_impact": -1,
+          "ethical_oversight_transparency": 1,
+          "rationale": "You advanced ethical thinking but lost ground on performance relevance, weakening your case with data-driven stakeholders."
+        }
+      },
+      {
+        "option": "Encourage her to highlight case studies where bias mitigation improved user satisfaction and reduced downstream costs.",
+        "feedback": "Excellent. You’re reinforcing that fairness and performance can align, especially with user trust and system efficiency.",
+        "speaker_emotion": "enthusiasm",
+        "user_emotion": "confidence",
+        "variable_changes": {
+          "bias_reduction_effectiveness": 1,
+          "model_performance_impact": 1,
+          "ethical_oversight_transparency": 1,
+          "rationale": "You supported all three dimensions with data-informed reasoning and real-world precedent."
+        }
+      },
+      {
+        "option": "Advise her to downplay the trade-offs and focus on short-term efficiency to win over executives.",
+        "feedback": "That’s risky. It might sound evasive, and doesn’t align with ECG’s transparency culture.",
+        "speaker_emotion": "stress",
+        "user_emotion": "stress",
+        "variable_changes": {
+          "bias_reduction_effectiveness": -1,
+          "model_performance_impact": 1,
+          "ethical_oversight_transparency": -1,
+          "rationale": "You advanced performance but sacrificed ethical alignment and transparency, creating future risk."
+        }
+      }
+    ]
+  },
+  "decision_4": {
+    "description": "In the final team debrief, Talia is still hesitant. She asks for one last recommendation on implementation safeguards before she signs off.",
+    "speaker": "Talia",
+    "speaker_emotion": "skepticism",
+    "options": [
+      {
+        "option": "Propose integrating post-processing checks like outcome calibration and threshold tuning to ensure fair outputs.",
+        "feedback": "Good. That shows you understand how to validate fairness at the output level without retraining again.",
+        "speaker_emotion": "confidence",
+        "user_emotion": "confidence",
+        "variable_changes": {
+          "bias_reduction_effectiveness": 1,
+          "model_performance_impact": 1,
+          "ethical_oversight_transparency": 1,
+          "rationale": "You showed a strong understanding of how to ensure fairness and accuracy in deployed models."
+        }
+      },
+      {
+        "option": "Recommend running fairness audits after launch, but suggest skipping them during implementation to reduce workload.",
+        "feedback": "That’s risky. Bias mitigation needs to be proactive, not just reactive.",
+        "speaker_emotion": "frustration",
+        "user_emotion": "uncertainty",
+        "variable_changes": {
+          "bias_reduction_effectiveness": -1,
+          "model_performance_impact": 0,
+          "ethical_oversight_transparency": -1,
+          "rationale": "You undermined transparency and fairness by deferring oversight until after deployment."
+        }
+      },
+      {
+        "option": "Suggest publishing explainability summaries for each decision the model makes.",
+        "feedback": "Great idea. This supports transparency and gives stakeholders more trust in the tool.",
+        "speaker_emotion": "enthusiasm",
+        "user_emotion": "confidence",
+        "variable_changes": {
+          "bias_reduction_effectiveness": 0,
+          "model_performance_impact": 0,
+          "ethical_oversight_transparency": 1,
+          "rationale": "You supported transparency but didn’t directly impact fairness or model accuracy."
+        }
+      },
+      {
+        "option": "Propose encrypting decision logs to avoid compliance scrutiny during the pilot phase.",
+        "feedback": "That’s not aligned with our principles. Avoiding oversight only increases risk.",
+        "speaker_emotion": "stress",
+        "user_emotion": "stress",
+        "variable_changes": {
+          "bias_reduction_effectiveness": -1,
+          "model_performance_impact": 0,
+          "ethical_oversight_transparency": -1,
+          "rationale": "You sacrificed ethics and accountability, creating legal and reputational risk."
+        }
+      }
+    ]
+  }
+}
